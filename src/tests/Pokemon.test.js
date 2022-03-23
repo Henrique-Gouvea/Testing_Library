@@ -39,7 +39,7 @@ describe('Testa a página Pokemon', () => {
     expect(history.location.pathname).toBe('/pokemons/25');
   });
 
-  it('Teste ao clicar no link do Pokémon, é feito o redirecionamento', () => {
+  it('Teste ao clicar no link do Pokémon, é feito dso redirecionamento', () => {
     renderWithRouter(<App />);
     const btnDetails = screen.getByRole('link', { name: MORE_DETAILS });
     userEvent.click(btnDetails);
