@@ -18,7 +18,7 @@ describe('Testa o componente PokemonDetails', () => {
     expect(summary).toBeDefined();
 
     const linkMoreDetails = screen.queryByRole('link', { name: /more details/i });
-    expect(linkMoreDetails).not.toBeInTheDocument();
+    expect(linkMoreDetails).toBeFalsy();
 
     const details = screen.getByText(/This intelligent Pokémon roasts hard berries/i);
     expect(details).toBeInTheDocument();
